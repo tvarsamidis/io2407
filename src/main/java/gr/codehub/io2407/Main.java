@@ -1,14 +1,19 @@
 
 package gr.codehub.io2407;
 
-import java.io.IOException;
+import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException  {
-        System.out.println("Copying file...");
-        CharIO.copyFile("C:\\programs\\databases\\a.txt", 
-                "C:/programs/databases/b.txt");
-        System.out.println("Copying done!");
+    public static void main(String[] args) throws Exception  {
+//        System.out.println("Copying file...");
+//        DataIO.saveData("C:\\programs\\databases\\c.txt");
+//        System.out.println("Copying done!");
+//        
+        List<String> lines = LineIO.readFile("C:\\programs\\databases\\a.txt");
+        for(String line: lines) {
+            System.out.println(line);
+        }
+        
     }
 }

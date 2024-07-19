@@ -14,7 +14,7 @@ public class ByteIO {
         boolean finished = false;
         while (!finished) {
             int b = in.read();
-            byte c[] = in.readNBytes(100);
+            // byte c[] = in.readNBytes(100);
             
 //            in.skip(10_000_000_000L);
 //            in.reset();

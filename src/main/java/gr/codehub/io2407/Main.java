@@ -1,16 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package gr.codehub.io2407;
 
-/**
- *
- * @author Thomas
- */
+import java.io.IOException;
+
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public static void main(String[] args) throws IOException  {
+        System.out.println("Copying file...");
+        ByteIO.copyFile("C:\\programs\\DBeaver\\DBeaver.exe", 
+                "C:/programs/DBeaver/MyDBeaver.exe");
+        System.out.println("Copying done!");
     }
 }

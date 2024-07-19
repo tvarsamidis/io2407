@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException  {
         System.out.println("Copying file...");
-        ByteIO.copyFile("C:\\programs\\DBeaver\\DBeaver.exe", 
-                "C:/programs/DBeaver/MyDBeaver.exe");
+        CharIO.copyFile("C:\\programs\\databases\\a.txt", 
+                "C:/programs/databases/b.txt");
         System.out.println("Copying done!");
     }
 }
